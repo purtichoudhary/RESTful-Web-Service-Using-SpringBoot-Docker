@@ -26,6 +26,7 @@ public class RestaurantController {
         Restaurant[] restaurants = null;
         try {
             restaurants = mapper.readValue(resource.getFile(), Restaurant[].class);
+            restaurants = mapper.readValue(this.getAllRestaurants().getClassLoader().getResourceAsStream(), Restaurant[].class);
         } catch (IOException e) {
             e.printStackTrace();
         }
