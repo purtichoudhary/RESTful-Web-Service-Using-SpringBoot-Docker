@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.pace.docker.web.services</groupId>
 	<artifactId>docker-spring-boot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>docker-spring-boot</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Boot Application using Docker</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -44,6 +44,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>docker-spring-boot</finalName>
 	</build>
-
 </project>
