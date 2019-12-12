@@ -14,3 +14,12 @@ The web-service is developed for a songs.json file which includes following attr
 4. Web_url
 5. Img_url
 
+To run this project you need to do the following steps:
+Start the docker and do a Maven clean build for the project.
+
+Build the docker to generate an execuatable image of the web-service using commanad-
+docker build -f Dockerfile -t spring-boot-docker .
+
+Then run the generate image using the command-
+docker run -p 8085:8085 spring-boot-docker
+
